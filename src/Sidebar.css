@@ -1,0 +1,83 @@
+.category-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-item {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-item:hover {
+  background-color: #ddd;
+}
+
+.category-item:active {
+  background-color: #ccc;
+}
+
+.divider {
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.caret-sign {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.caret-sign.open {
+  transform: rotate(-45deg);
+}
+
+.accordion-content {
+  list-style-type: none;
+  padding: 0 15px;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.accordion-content.open {
+  opacity: 1;
+  max-height: 2000px;
+}
+
+.accordion-item {
+  padding: 8px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.accordion-item:hover {
+  background-color: #eee;
+}
+
+.accordion-item:active {
+  background-color: #ddd;
+}
+
+.accordion-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.accordion-item label {
+  cursor: pointer;
+}
