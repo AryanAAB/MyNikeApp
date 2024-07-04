@@ -21,9 +21,9 @@ const App = () => {
             <Route path="/products" element={<Navigate to="/login" />} />
         )}
         {currentUser ? (
-            <Route path="/" element={<ProductList />} />
+            <Route path="/MyNikeApp" element={<ProductList />} />
           ) : (
-            <Route path="/" element={<Navigate to="/login" />} />
+            <Route path="/MyNikeApp" element={<Navigate to="/login" />} />
         )}
         {currentUser ? (
             <Route path="/cart" element={<Cart />} />
